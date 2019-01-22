@@ -1,0 +1,94 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+
+/*header.bg {
+	height: 100vh;
+	background-position: center;
+	background-image: url('./csgo.png');
+	background-size: cover;
+}*/
+
+.container-fluid {
+	height: 100vh;
+	background-position: center; /* Keeps image responsive */
+	background-image: url('./csgo.png');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+p {
+	position: absolute;
+	top: 40%;
+	left: 55%;
+	color: black;
+	font-size: 2rem;
+}
+
+/* SOLUTION 1 to Moving a Button */
+/*.btn-group{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);}*/  /* offsets the position to make it actually centered */
+
+
+/* SOLUTION 2 to Moving a Button - Using Flexbox & Media Querries; requires multiple resized photos */
+/* @media only screen and (max-width: 600px){ background-image: url(smallerpic.png)} */
+
+/*.btn-group {
+	display: flex;
+	top: 23%;
+	width: 10%;
+	height: 5%;
+	margin: auto;
+}*/
+.btn:hover {
+	transition-duration: 1s;
+	background-color: gray;
+}
+
+.btn-group {
+	margin-top: 400px;
+}
+
+.btn-danger {
+	background-color: rgba(3, 0, 0, 0.85) !important;
+}
+
+.btn-danger:hover {
+	background-color: gray !important; /* overrides bootstrap css to cancel out the red color */
+}
+
+.dropdown-toggle {
+	background-color: rgba(3, 0, 0, 0.85);
+}
+
+.dropdown-menu, a {
+	background-color: rgba(3, 0, 0, 0.85);
+}
+
+.dropdown-item {
+	color: white;
+}
+
+.btn {
+	background-color: rgba(3, 0, 0, 0.85);
+	font-size: 2.5rem;
+}
+
+.dropdown-menu {
+	background-color: rgba(3, 0, 0, 0.85);
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  /*background-image: url(csgo.png);*/ /*Easy method of setting a background image without bootstrap */
+
+}
